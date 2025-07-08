@@ -29,7 +29,7 @@ const Header = () => {
       <ul className={`absolute sm:relative pl-10 pr-28 py-4 sm:p-0 shadow sm:shadow-none top-0 ${isShowMenu ? 'left-0' : '-left-full'} sm:left-0 bg-white dark:bg-highlight dark:sm:bg-transparent sm:bg-transparent flex-col sm:flex-row flex gap-10 sm:items-center transition-all`}>
         {navigations.map((item, index) => (
           <li key={index}>
-            <a href={item.value} className="font-medium transition-all hover:text-highlight text-lg dark:text-white">{item.label}</a>
+            <a href={item.value} className="font-medium transition-all hover:text-highlight text-lg dark:text-white" onClick={() => setIsShowMenu(false)}>{item.label}</a>
           </li>
         ))}
         <li className="absolute right-4 top-4 sm:hidden">

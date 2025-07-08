@@ -33,7 +33,7 @@ const Header = () => {
           </li>
         ))}
         <li className="absolute right-4 top-4 sm:hidden">
-          <X className="text-white" onClick={() => setIsShowMenu(false)} />
+          <X className="text-black dark:text-white" onClick={() => setIsShowMenu(false)} />
         </li>
       </ul>
       <ThemeSwitcher />

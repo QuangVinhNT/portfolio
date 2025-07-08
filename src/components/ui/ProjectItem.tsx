@@ -16,7 +16,7 @@ const ProjectItem = (props: Props) => {
       />
       <h2 className="font-anton text-xl mt-4 dark:text-white">{project.name}</h2>
       <p className="my-2 dark:text-white">{project.description}</p>
-      <div className="flex gap-4 mb-4">
+      <div className="hidden lg:flex gap-4 mb-4">
         {project.features.map((item, idx) => (
           <span key={idx} className="bg-card-background px-4 py-2 text-sm font-semibold ">{item}</span>
         ))}

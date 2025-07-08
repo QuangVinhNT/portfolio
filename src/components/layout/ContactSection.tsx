@@ -33,7 +33,7 @@ const ContactSection = () => {
     threshold: 0.3
   });
   return (
-    <div className="mt-40" id="contact" ref={ref}>
+    <div className="mt-40 px-4 xl:px-0" id="contact" ref={ref}>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -41,7 +41,7 @@ const ContactSection = () => {
       >
         <span className="font-semibold block text-center dark:text-white">Contact</span>
         <h1 className="font-anton text-4xl text-center mb-10 dark:text-white">Let's Connect and Collaborate!</h1>
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-6 md:gap-y-0">
           {contacts.map((contact, idx) => (
             <ContactItem key={idx} contact={contact} />
           ))}

@@ -4,7 +4,7 @@ import { ContactSection, Footer, Header, HomeSection, ProjectSection, SkillSecti
 function App() {
 
   return (
-    <div className="dark:bg-dark">
+    <div className="dark:bg-dark overflow-x-hidden">
       <Header />
 
       <div className="max-w-[1440px] mx-auto">

@@ -20,7 +20,7 @@ export function ThemeSwitcher() {
   return (
     <div className="flex items-center space-x-2">
       <Switch checked={isDark} onCheckedChange={setIsDark} className="cursor-pointer"/>
-      <span className="dark:text-white">{isDark ? "Dark Mode" : "Light Mode"}</span>
+      <span className="dark:text-white block">{isDark ? "Dark" : "Light"}</span>
     </div>
   );
 }

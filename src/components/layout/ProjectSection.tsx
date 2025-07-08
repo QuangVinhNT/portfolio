@@ -10,6 +10,20 @@ const projects: Project[] = [
     description: "A responsive web application that provides real-time weather updates.",
     features: ['JavaScript, API', 'Responsive Design', 'Real-time Data'],
     link: '#'
+  },
+  {
+    image: "https://t3.ftcdn.net/jpg/04/91/54/18/360_F_491541875_c0vIhFwHnRZvmRfJELvJxtSQbRDOwbGC.jpg",
+    name: 'Weather App',
+    description: "A responsive web application that provides real-time weather updates.",
+    features: ['JavaScript, API', 'Responsive Design', 'Real-time Data'],
+    link: '#'
+  },
+  {
+    image: "https://t3.ftcdn.net/jpg/04/91/54/18/360_F_491541875_c0vIhFwHnRZvmRfJELvJxtSQbRDOwbGC.jpg",
+    name: 'Weather App',
+    description: "A responsive web application that provides real-time weather updates.",
+    features: ['JavaScript, API', 'Responsive Design', 'Real-time Data'],
+    link: '#'
   }
 ];
 
@@ -20,7 +34,7 @@ const ProjectSection = () => {
   });
   return (
     <div
-      className="mt-40 scroll-m-24"
+      className="mt-40 scroll-m-24 px-4 xl:px-0"
       id="projects"
       ref={ref}
     >
@@ -31,7 +45,7 @@ const ProjectSection = () => {
       >
         <span className="font-semibold block text-center dark:text-white">Projects</span>
         <h1 className="font-anton text-4xl text-center mb-10 dark:text-white">Featured Projects Showcase</h1>
-        <div className="grid grid-cols-2 gap-x-20 gap-y-10 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-20 gap-y-10 mb-10">
           {projects.map((project, idx) => (
             <ProjectItem key={idx} project={project} />
           ))}

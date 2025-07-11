@@ -2,29 +2,16 @@ import type { Project } from "@/types";
 import ProjectItem from "../ui/ProjectItem";
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
+import NettechCoverImg from '@/assets/cover_img/nettech_cover.png'
 
 const projects: Project[] = [
   {
-    image: "https://t3.ftcdn.net/jpg/04/91/54/18/360_F_491541875_c0vIhFwHnRZvmRfJELvJxtSQbRDOwbGC.jpg",
-    name: 'Weather App',
-    description: "A responsive web application that provides real-time weather updates.",
-    features: ['JavaScript, API', 'Responsive Design', 'Real-time Data'],
-    link: '#'
+    image: NettechCoverImg,
+    name: 'Nettech',
+    description: "A responsive web application that dedicated to powering your business success with digital solutions and unwavering commitment, focusing on 4 compelling strengths: speed, commitment, customer centricity and crestivity.",
+    features: ['Landing Page', 'ReactJS', 'TypeScript'],
+    link: 'https://nettech-moppie.vercel.app/'
   },
-  {
-    image: "https://t3.ftcdn.net/jpg/04/91/54/18/360_F_491541875_c0vIhFwHnRZvmRfJELvJxtSQbRDOwbGC.jpg",
-    name: 'Weather App',
-    description: "A responsive web application that provides real-time weather updates.",
-    features: ['JavaScript, API', 'Responsive Design', 'Real-time Data'],
-    link: '#'
-  },
-  {
-    image: "https://t3.ftcdn.net/jpg/04/91/54/18/360_F_491541875_c0vIhFwHnRZvmRfJELvJxtSQbRDOwbGC.jpg",
-    name: 'Weather App',
-    description: "A responsive web application that provides real-time weather updates.",
-    features: ['JavaScript, API', 'Responsive Design', 'Real-time Data'],
-    link: '#'
-  }
 ];
 
 const ProjectSection = () => {

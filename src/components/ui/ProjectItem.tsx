@@ -21,7 +21,7 @@ const ProjectItem = (props: Props) => {
           <span key={idx} className="bg-card-background px-4 py-2 text-sm font-semibold ">{item}</span>
         ))}
       </div>
-      <a href={project.link} className="flex items-center gap-0.5">
+      <a href={project.link} target="_blank" className="flex items-center gap-0.5">
         <span className="hover:underline dark:text-white">View project</span>
         <ChevronRight size={20} className="dark:text-white" />
       </a>

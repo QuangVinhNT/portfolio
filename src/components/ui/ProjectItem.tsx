@@ -14,7 +14,9 @@ const ProjectItem = (props: Props) => {
         src={project.image}
         alt="Image"
       />
-      <h2 className="font-anton text-xl mt-4 dark:text-white">{project.name}</h2>
+      <h2 className="font-anton text-xl mt-4 dark:text-white">
+        <a href={project.githubLink ?? '#'} target="_blank">{project.name}</a>
+      </h2>
       <p className="my-2 dark:text-white">{project.description}</p>
       <div className="hidden lg:flex gap-4 mb-4">
         {project.features.map((item, idx) => (
@@ -22,7 +24,7 @@ const ProjectItem = (props: Props) => {
         ))}
       </div>
       <a href={project.link} target="_blank" className="flex items-center gap-0.5">
-        <span className="hover:underline dark:text-white">View project</span>
+        <span className="hover:underline dark:text-white">View demo</span>
         <ChevronRight size={20} className="dark:text-white" />
       </a>
     </div>

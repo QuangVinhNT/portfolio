@@ -10,7 +10,8 @@ const projects: Project[] = [
     name: 'Nettech',
     description: "A responsive web application that dedicated to powering your business success with digital solutions and unwavering commitment, focusing on 4 compelling strengths: speed, commitment, customer centricity and crestivity.",
     features: ['Landing Page', 'ReactJS', 'TypeScript'],
-    link: 'https://nettech-moppie.vercel.app/'
+    link: 'https://nettech-moppie.vercel.app/',
+    githubLink: 'https://github.com/QuangVinhNT/nettech'
   },
 ];
 

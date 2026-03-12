@@ -3,6 +3,7 @@ import ProjectItem from "../ui/ProjectItem";
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import NettechCoverImg from '@/assets/cover_img/nettech_cover.png'
+import QuickShowCoverImg from '@/assets/cover_img/quickshow_cover.png'
 
 const projects: Project[] = [
   {
@@ -12,6 +13,14 @@ const projects: Project[] = [
     features: ['Landing Page', 'ReactJS', 'TypeScript'],
     link: 'https://nettech-moppie.vercel.app/',
     githubLink: 'https://github.com/QuangVinhNT/nettech'
+  },
+  {
+    image: QuickShowCoverImg,
+    name: 'QuickShow',
+    description: "A Full Stack Movie Ticket Booking Website using MERN Stack. User can signup, explore the movies and book the tickets. While booking tickets, user can choose their preferred seats.",
+    features: ['Web Application', 'ReactJS', 'NodeJS'],
+    link: 'https://moppie-quickshow.vercel.app/',
+    githubLink: 'https://github.com/QuangVinhNT/quickshow'
   },
 ];
 

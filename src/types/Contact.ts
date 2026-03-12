@@ -5,4 +5,5 @@ export type Contact = {
   label: string,
   value?: string,
   link?: string;
+  mail?: boolean;
 };

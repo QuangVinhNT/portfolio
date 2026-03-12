@@ -8,7 +8,8 @@ const contacts: Contact[] = [
   {
     icon: <Mail size={48} className="dark:text-white" />,
     label: 'Email',
-    value: 'ntqvinh.251103@gmail.com'
+    link: 'ntqvinh.251103@gmail.com',
+    mail: true
   },
   {
     icon: <Facebook size={48} className="dark:text-white" />,
